@@ -1,0 +1,8 @@
+name = "sudo"
+version = "1.9.16p2"
+repo = "tox"
+
+[data]
+source = { url = "https://www.sudo.ws/dist/sudo-1.9.16p2.tar.gz", hash = "l2qlbT47KnVZMweGQoit23SMnBNuJdlanMaZqvp3I5w" }
+extra = [
+]
