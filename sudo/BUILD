@@ -24,7 +24,7 @@ b-cfg \
     --with-editor=/bin/nvim    \
     --without-lecture          \
     --disable-year2038         \
-    --with-passwd-tries=9      \
+    --with-passwd-tries=5      \
     --with-timeout=30          \
     --with-password-timeout=1  \
     --with-passprompt="${SUDO_PROMPT}"  \
