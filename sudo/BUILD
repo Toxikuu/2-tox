@@ -26,7 +26,7 @@ b-cfg \
     --disable-year2038         \
     --with-passwd-tries=9      \
     --with-timeout=30          \
-    --with-password-timeout=5  \
+    --with-password-timeout=1  \
     --with-passprompt="${SUDO_PROMPT}"  \
     --with-badpass-message="${BADPASS_PROMPT}"
 
