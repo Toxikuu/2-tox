@@ -23,7 +23,6 @@ b-cfg \
     --with-secure-path         \
     --with-editor=/bin/nvim    \
     --without-lecture          \
-    --docdir=/tmp/rid/trash    \
     --disable-year2038         \
     --with-passwd-tries=9      \
     --with-timeout=30          \
