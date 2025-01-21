@@ -1,0 +1,8 @@
+name = "kernel"
+version = "6.13"
+repo = "tox"
+
+[data]
+source = { url = "https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.13.tar.gz", hash = "OPNloADvSDzdug8JqowtgR2XfKz0560Hn5rL1SXOt6c" }
+extra = [
+]
