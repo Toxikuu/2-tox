@@ -2,6 +2,7 @@ NAME="sudo"
 VERS="1.9.16p2"
 DESC="Allows users to execute commands as root"
 UPST="https://github.com/sudo-project/sudo.git"
+VCMD="git ls-remote --tags --refs '$UPST' | sed 's@.*/@@' | grep SUDO_ | sed -e 's@SUDO_@@' -e 's@_@.@g' | sort -V | tail -n1"
 
 SOURCE="https://www.sudo.ws/dist/sudo-$VERS.tar.gz"
 EXTRA=()
