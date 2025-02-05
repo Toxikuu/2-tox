@@ -3,7 +3,7 @@ version = "6.13.1"
 repo = "tox"
 
 [data]
-source = { url = "https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.13.1.tar.gz", hash = "mxxjxICufpITmFNSqqvnihTezfPrrcvC-uirxuMF240" }
+source = { url = "https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.13.1.tar.gz", hash = "" }
 extra = [
 ]
 upstream = "https://kernel.org"
