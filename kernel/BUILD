@@ -68,3 +68,5 @@ fresh_build
 # fi
 
 }
+
+#d added kernelconfig oops!!
