@@ -1,5 +1,5 @@
 NAME="kernel"
-VERS="6.12.11" # 6.13 doesn't play nice with 6.12.11 rn
+VERS="6.13.1"
 DESC="The Linux kernel"
 UPST="https://kernel.org"
 VCMD="curl -s 'https://kernel.org' | grep linux- | head -n1 | cut -d'>' -f2 | cut -d'<' -f1"
