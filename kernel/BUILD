@@ -13,12 +13,12 @@ EXTRACT=1
 
 2b() {
 
-kver=$(realpath /usr/src/linux | cut -d'=' -f2-)
+kver=$(realpath /usr/src/linux | cut -d- -f2-)
 
 reuse_build() {
-
     ln -sv /usr/src/linux "$BLD/build"
     cd "$BLD/build"
+    [ -e .config ] || die 'Missing kernel config! :(('
 
     b-make olddefconfig
     b-make
@@ -29,19 +29,20 @@ reuse_build() {
     cp -vf System.map "$D"/boot/System.map-$VERS
     cp -vf .config "$D"/boot/config-$VERS
     cp -vf "$D"/boot/vmlinuz-$VERS-two "$D"/efi/tox64.efi
-
 }
 
 fresh_build() {
+    rm -rf "/usr/src/linux-$VERS" # prevent some dumb shit from happening
     tar xf "$SRC/kernel=$VERS.tar."*z*  \
       -C /usr/src                       \
       --checkpoint=4096                 \
       --checkpoint-action='echo="#%u: %T"'
 
-    mv -vf /usr/src/linux{-,'='}$VERS 
+    rm -rf "/usr/src/linux" # prevent more dumb shit from happening
+    ln -sfv "/usr/src/linux-$VERS" "/usr/src/linux"
+
     ln -sv "/usr/src/linux=$VERS" "$BLD/build"
     cd "$BLD/build"
-
     cp -vf "$PORT"/kernelconfig .config
 
     b-make olddefconfig
@@ -53,20 +54,14 @@ fresh_build() {
     cp -vf System.map "$D"/boot/System.map-$VERS
     cp -vf .config "$D"/boot/config-$VERS
     cp -vf "$D"/boot/vmlinuz-$VERS-two "$D"/efi/tox64.efi
-
-    rm -vf /usr/src/linux || die "/usr/src/linux should be a symlink to /usr/src/linux-$kver"
-    cp -Rv "$BLD/build" "/usr/src/linux=$VERS"
-    ln -sv linux "/usr/src/linux=$VERS"
 }
 
-fresh_build
-
-# if [ -z "$kver" ]; then
-#     fresh_build
-# else
-#     reuse_build
-# fi
+if [ -z "$kver" ]; then
+    fresh_build
+else
+    reuse_build
+fi
 
 }
 
-#d added kernelconfig oops!!
+#d Adapted to better follow the template in main/kernel
