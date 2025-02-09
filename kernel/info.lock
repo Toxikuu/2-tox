@@ -1,9 +1,9 @@
 name = "kernel"
-version = "6.13.1"
+version = "6.12.3"
 repo = "tox"
 
 [data]
-source = { url = "https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.13.1.tar.gz", hash = "mxxjxICufpITmFNSqqvnihTezfPrrcvC-uirxuMF240" }
+source = { url = "https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.12.3.tar.gz", hash = "1yET5dfBnrA8VgAv4xIr2kfZfPwkaQFv_zgXk3FNBcg" }
 extra = [
 ]
 upstream = "https://kernel.org"
