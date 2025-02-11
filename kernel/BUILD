@@ -1,5 +1,5 @@
 NAME="kernel"
-VERS="6.12.3"
+VERS="6.13.2"
 DESC="The Linux kernel"
 UPST="https://kernel.org"
 VCMD="curl -s 'https://kernel.org' | grep linux- | head -n1 | cut -d'>' -f2 | cut -d'<' -f1"
@@ -63,5 +63,4 @@ else
 fi
 
 }
-
-#d Adapted to better follow the template in main/kernel
+#d accidentally updated it to 6.12.3 instead of 6.13.2
