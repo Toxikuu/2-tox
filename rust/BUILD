@@ -1,5 +1,5 @@
 NAME="rust"
-VERS="9999" # TODO: Move this to Tox and use stable here
+VERS="9999"
 DESC="The Rust programming language"
 UPST="https://github.com/rust-lang/rust.git"
 VCMD="git ls-remote --tags --refs '$UPST' | sed 's@.*/@@' | grep -v 'release-' | sort -V | tail -n1"
