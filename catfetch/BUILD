@@ -1,5 +1,5 @@
 NAME="catfetch"
-VERS="1.0.0"
+VERS="1.0.1"
 DESC="Cute little fetch script written in rust"
 UPST="https://github.com/Toxikuu/catfetch.git"
 
