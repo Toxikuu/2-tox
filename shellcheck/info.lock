@@ -1,0 +1,8 @@
+repo = "tox"
+name = "shellcheck"
+version = "0.10.0"
+upstream = "https://github.com/koalaman/shellcheck.git"
+
+[source]
+url = "https://github.com/koalaman/shellcheck/releases/download/v0.10.0/shellcheck-v0.10.0.linux.x86_64.tar.xz"
+hash = "bIgasGmOTm6iNSRfIoMoYFRPF7o4ZEL-fp1in4y-34c"
