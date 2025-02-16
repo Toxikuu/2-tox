@@ -4,5 +4,5 @@ version = "1.0.1"
 upstream = "https://github.com/Toxikuu/catfetch.git"
 
 [source]
-url = "https://github.com/Toxikuu/catfetch/archive/refs/tags/v1.0.0.tar.gz"
-hash = "xqqAjyPbSmdpVRwGevmnUniGMiSsHSkvutMoz8JD3fY"
+url = "https://github.com/Toxikuu/catfetch/archive/refs/tags/v1.0.1.tar.gz"
+hash = "mxfZJqOwt1GzN1HWMw2aZssYbgqcIUAUfiGnqcVW0u0"
