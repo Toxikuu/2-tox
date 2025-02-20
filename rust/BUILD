@@ -6,8 +6,6 @@ VCMD="git ls-remote --tags --refs '$UPST' | sed 's@.*/@@' | grep -v 'release-' |
 
 2b() {
 
-. e-rust
-
 if [ "$VERS" = "9999" ]; then
     export VERS="nightly"
 fi
