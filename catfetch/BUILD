@@ -8,8 +8,9 @@ EXTRA=()
 
 2b() {
 
-. e-rust
-cargo build --release
+with rust
+
+cbr
 install -vDm755 target/release/catfetch "$D"/usr/bin/catfetch
 
 }
