@@ -19,8 +19,7 @@ WHITE=$(tput setaf 7)
 SUDO_PROMPT=" ${BOLD}[${RED}#${NORMAL}${BOLD}]${NORMAL} "
 BADPASS_PROMPT="${BOLD}${ITALIC}${PINK}♡★  ✿ ,.♡${WHITE} ~ try again! ${PINK}՞ ${RED}⸝⸝${PINK}>  ̫ <${RED}⸝⸝${PINK} ՞⸜ ★ ♡⸝ ✿ ${NORMAL}"
 
-b-cfg \
-    --libexecdir=/usr/lib      \
+cfg --libexecdir=/usr/lib      \
     --with-secure-path         \
     --with-editor=/bin/nvim    \
     --without-lecture          \
@@ -31,8 +30,8 @@ b-cfg \
     --with-passprompt="${SUDO_PROMPT}"  \
     --with-badpass-message="${BADPASS_PROMPT}"
 
-b-make
-b-mi
+mk
+mi
 
 cp -av "$PORT/etc" "$D"
 
