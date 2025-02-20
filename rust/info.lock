@@ -1,4 +1,4 @@
-repo = "main"
+repo = "tox"
 name = "rust"
 version = "9999"
 upstream = "https://github.com/rust-lang/rust.git"
