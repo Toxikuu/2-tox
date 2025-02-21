@@ -1,6 +1,8 @@
 repo = "tox"
 name = "shellcheck"
 version = "0.10.0"
+description = "Static analysis tool for shell scripts"
+timestamp = "2025-02-20 20:24:36"
 upstream = "https://github.com/koalaman/shellcheck.git"
 
 [source]
