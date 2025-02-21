@@ -1,6 +1,8 @@
 repo = "tox"
 name = "catfetch"
 version = "1.0.1"
+description = "Cute little fetch script written in rust"
+timestamp = "2025-02-20 20:24:35"
 upstream = "https://github.com/Toxikuu/catfetch.git"
 
 [source]
