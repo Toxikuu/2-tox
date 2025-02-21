@@ -1,6 +1,8 @@
 repo = "tox"
 name = "sudo"
 version = "1.9.16p2"
+description = "Allows users to execute commands as root"
+timestamp = "2025-02-20 20:24:36"
 upstream = "https://github.com/sudo-project/sudo.git"
 version_command = "git ls-remote --tags --refs 'https://github.com/sudo-project/sudo.git' | sed 's@.*/@@' | grep SUDO_ | sed -e 's@SUDO_@@' -e 's@_@.@g' | sort -V | tail -n1"
 
