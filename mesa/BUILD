@@ -21,11 +21,12 @@ EXTRA=()
 with meson ninja
 
 _cfg_opts=(
-    -D osmesa=true
-    -D platforms=x11,wayland
-    -D gallium-drivers=auto
-    -D vulkan-drivers=auto
+    -D osmesa=false
+    -D platforms=x11
+    -D gallium-drivers=nouveau
+    -D vulkan-drivers=""
     -D valgrind=disabled
+    -D llvm=disabled
     -D video-codecs=all
     -D libunwind=disabled
 )
@@ -33,22 +34,5 @@ _cfg_opts=(
 ms "${_cfg_opts[@]}"
 nj
 ni
-
-mkdir -pv "$D/usr/share/doc"
-cp -av ../docs -T "$D"/usr/share/doc/mesa
-
-cd ..
-m32=1
-
-ms --cross-file lib32 "${_cfg_opts[@]}"
-
-sed -i 's/\/usr\/lib\//\/usr\/lib32\//g' ./build.ninja
-BINDGEN_EXTRA_CLANG_ARGS="-m32" nj
-ni
-
-# copy over vulkan stuff if it was compiled
-[[ -d "$BLD/32DEST/usr/share/vulkan" ]] && {
-    cp -av "$BLD/32DEST/usr/share/vulkan" "$D/usr/share"
-}
 
 }
