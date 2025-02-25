@@ -1,11 +1,11 @@
 repo = "tox"
 name = "kernel"
-version = "6.13.3"
+version = "6.13.4"
 description = "The Linux kernel"
-timestamp = "2025-02-20 20:24:35"
+timestamp = "2025-02-24 21:17:47"
 upstream = "https://kernel.org"
 version_command = "curl -s 'https://kernel.org' | grep linux- | head -n1 | cut -d'>' -f2 | cut -d'<' -f1"
 
 [source]
-url = "https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.13.3.tar.gz"
-hash = "lODy_895IKzeVK6DM9v3Oxxd8pEuMOKAeYKEb9usf6I"
+url = "https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.13.4.tar.gz"
+hash = "2sqPIr8nXDq39UvWfAHA4flNI0wV0iT6kRV20fYsdDU"
