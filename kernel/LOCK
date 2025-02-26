@@ -2,7 +2,11 @@ repo = "tox"
 name = "kernel"
 version = "6.13.4"
 description = "The Linux kernel"
-timestamp = "2025-02-25 20:04:35"
+categories = [
+    "critical",
+    "core",
+]
+timestamp = "2025-02-25 20:22:42"
 upstream = "https://kernel.org"
 version_command = "curl -s 'https://kernel.org' | grep linux- | head -n1 | cut -d'>' -f2 | cut -d'<' -f1"
 
