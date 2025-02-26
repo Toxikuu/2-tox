@@ -1,5 +1,6 @@
 NAME="llvm"
 VERS="19.1.7"
+CATG="lang"
 DESC="A collection of modular and reusable compiler and toolchain technologies"
 UPST="https://github.com/llvm/llvm-project.git"
 VCMD="git ls-remote --tags --refs '$UPST' | cut -d- -f2- | grep -v [a-Z] | sort -V | tail -n1"
