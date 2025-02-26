@@ -61,3 +61,4 @@ else
 fi
 
 }
+#d updated kernel config (functional ttys with nvidia!)
