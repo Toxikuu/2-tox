@@ -1,5 +1,6 @@
 NAME="shellcheck"
 VERS="0.10.0"
+CATG="dev"
 DESC="Static analysis tool for shell scripts"
 UPST="https://github.com/koalaman/shellcheck.git"
 
