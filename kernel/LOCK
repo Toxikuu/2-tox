@@ -1,15 +1,15 @@
 repo = "tox"
 name = "kernel"
-version = "6.13.4"
+version = "6.13.5"
 description = "The Linux kernel"
 categories = [
     "critical",
     "core",
 ]
-timestamp = "2025-02-25 20:22:42"
+timestamp = "2025-03-03 02:13:10"
 upstream = "https://kernel.org"
 version_command = "curl -s 'https://kernel.org' | grep linux- | head -n1 | cut -d'>' -f2 | cut -d'<' -f1"
 
 [source]
-url = "https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.13.4.tar.gz"
-hash = "2sqPIr8nXDq39UvWfAHA4flNI0wV0iT6kRV20fYsdDU"
+url = "https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.13.5.tar.gz"
+hash = "R5LIWFc9WOTGPSU1sdx4IiOuJF6G-p6H1mJcJg-6qUk"
