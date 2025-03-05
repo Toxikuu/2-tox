@@ -6,7 +6,7 @@ categories = [
     "critical",
     "core",
 ]
-timestamp = "2025-03-03 02:13:10"
+timestamp = "2025-03-05 17:39:02"
 upstream = "https://kernel.org"
 version_command = "curl -s 'https://kernel.org' | grep linux- | head -n1 | cut -d'>' -f2 | cut -d'<' -f1"
 
