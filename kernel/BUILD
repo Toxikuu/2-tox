@@ -62,3 +62,4 @@ else
 fi
 
 }
+#d updated kernel config
