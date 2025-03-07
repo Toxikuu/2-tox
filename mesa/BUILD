@@ -1,5 +1,5 @@
 NAME="mesa"
-VERS="25.0.0"
+VERS="25.0.1"
 DESC="Graphics software bundle (OpenGL, Vulkan, etc.)"
 CATG="graphics"
 UPST="https://gitlab.freedesktop.org/mesa/mesa.git"
@@ -37,4 +37,3 @@ nj
 ni
 
 }
-
