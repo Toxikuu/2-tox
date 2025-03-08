@@ -3,7 +3,7 @@ name = "llvm"
 version = "19.1.7"
 description = "A collection of modular and reusable compiler and toolchain technologies"
 categories = ["lang"]
-timestamp = "2025-02-25 20:23:10"
+timestamp = "2025-03-08 01:39:33"
 upstream = "https://github.com/llvm/llvm-project.git"
 version_command = "git ls-remote --tags --refs 'https://github.com/llvm/llvm-project.git' | cut -d- -f2- | grep -v [a-Z] | sort -V | tail -n1"
 
