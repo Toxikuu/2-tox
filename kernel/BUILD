@@ -1,5 +1,5 @@
 NAME="kernel"
-VERS="6.13.5"
+VERS="6.13.6"
 CATG="critical core"
 DESC="The Linux kernel"
 VCMD="curl -s 'https://kernel.org' | grep linux- | head -n1 | cut -d'>' -f2 | cut -d'<' -f1"
@@ -62,4 +62,3 @@ else
 fi
 
 }
-#d updated kernel config
