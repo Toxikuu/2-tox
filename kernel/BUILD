@@ -5,7 +5,7 @@ DESC="The Linux kernel"
 VCMD="curl -s 'https://kernel.org' | grep linux- | head -n1 | cut -d'>' -f2 | cut -d'<' -f1"
 UPST="https://kernel.org"
 
-SOURCE="https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-$VERS.tar.gz"
+SOURCE="https://cdn.kernel.org/pub/linux/kernel/v${VERS%.*.*}.x/linux-$VERS.tar.gz"
 EXTRA=()
 
 EXTRACT=1
@@ -62,3 +62,4 @@ else
 fi
 
 }
+#d tweaked download link
