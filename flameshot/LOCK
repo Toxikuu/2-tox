@@ -6,8 +6,20 @@ categories = [
     "utils",
     "gui",
 ]
-timestamp = "2025-03-16 18:14:58"
-dependencies = ["fuse2"]
+timestamp = "2025-03-16 18:23:42"
+dependencies = [
+    "fuse2",
+    "o^xdotool:",
+    "used",
+    "in",
+    "flameshot.sh",
+    "to",
+    "refocus",
+    "after",
+    "taking",
+    "a",
+    "screenshot",
+]
 upstream = "https://github.com/flameshot-org/flameshot.git"
 
 [[extra]]
