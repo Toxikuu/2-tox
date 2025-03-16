@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Flameshot
+Exec=/usr/bin/flameshot.sh
+Terminal=false
+Type=Application
+Icon=Flameshot
+StartupWMClass=Flameshot
+X-AppImage-Version=1.6.7
+Comment=Screenshot Utility
+Keywords=screenshot;img;image;ss;
