@@ -6,7 +6,7 @@ categories = [
     "utils",
     "gui",
 ]
-timestamp = "2025-03-16 18:11:34"
+timestamp = "2025-03-16 18:14:58"
 dependencies = ["fuse2"]
 upstream = "https://github.com/flameshot-org/flameshot.git"
 
