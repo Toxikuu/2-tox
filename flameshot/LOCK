@@ -1,0 +1,15 @@
+repo = "tox"
+name = "flameshot"
+version = "12.1.0"
+description = "Powerful, easy-to-use screenshot tool"
+categories = [
+    "utils",
+    "gui",
+]
+timestamp = "2025-03-16 18:09:16"
+dependencies = ["fuse2"]
+upstream = "https://github.com/flameshot-org/flameshot.git"
+
+[[extra]]
+url = "https://github.com/flameshot-org/flameshot/releases/download/v12.1.0/Flameshot-12.1.0.x86_64.AppImage"
+hash = "wwY0yEFh8J6N3nTHY2exzoSEFLscwmnConFfaAMiBzg"
