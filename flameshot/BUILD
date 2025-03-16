@@ -5,6 +5,7 @@ CATG="utils gui"
 UPST="https://github.com/flameshot-org/flameshot.git"
 DEPS=(
     "fuse2"
+    "o^xdotool: used in flameshot.sh to refocus after taking a screenshot" 
 )
 
 # binary because i dont want to build qt5 just for this
@@ -18,9 +19,9 @@ cp -vf "$SRC/$APPIMG" .
 
 install -vDm755 "$APPIMG" "$D/usr/share/flameshot/$APPIMG"
 
-sed "s@_APPIMG_@$APPIMG@" "$PORT"/flameshot.sh
+sed -i "s@_APPIMG_@$APPIMG@" "$PORT"/flameshot.sh
 install -vDm755 "$PORT"/flameshot.sh "$D/usr/bin/flameshot.sh"
 install -vDm644 "$PORT"/flameshot.desktop "$D/usr/share/applications/flameshot.desktop"
 
 }
-#d tweaked flameshot.sh
+#d added xdotool as an optional dependency
