@@ -5,7 +5,7 @@ if [ $# -eq 0 ]; then
     set -- gui
 fi
 
-/usr/share/flameshot/_APPIMAGE_ "$@"
+/usr/share/flameshot/_APPIMG_ "$@"
 
 # regain focus if xdotool is available
 if command -v xdotool > /dev/null 2>&1; then
