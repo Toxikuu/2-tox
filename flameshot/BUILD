@@ -23,3 +23,4 @@ install -vDm755 "$PORT"/flameshot.sh "$D/usr/bin/flameshot.sh"
 install -vDm644 "$PORT"/flameshot.desktop "$D/usr/share/applications/flameshot.desktop"
 
 }
+#d tweaked flameshot.sh
