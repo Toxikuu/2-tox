@@ -1,5 +1,5 @@
 NAME="llvm"
-VERS="20.1.0"
+VERS="20.1.1"
 CATG="lang"
 DESC="A collection of modular and reusable compiler and toolchain technologies"
 UPST="https://github.com/llvm/llvm-project.git"
@@ -80,4 +80,3 @@ for i in clang clang++; do
 done
 
 }
-#d fixed a quoting issue
