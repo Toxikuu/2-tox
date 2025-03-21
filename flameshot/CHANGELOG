@@ -8,3 +8,4 @@
 [66b47ba8269394b1cd035f7e353fee6c84514c58] [2025-03-16 23:23:42] | Generated flameshot=12.1.0
 [de5d61d8bfb6db5cee0a11b0e85b5da83fc35272] [2025-03-16 23:24:45] | Revised flameshot: fix a typo in flameshot.sh
 [fbedd8baa8ca77346445c640ec4df90cc08e2ba3] [2025-03-16 23:24:46] | Generated flameshot=12.1.0
+[9e6d3c57fe9ae9c1321f62eccb770bb967ef4757] [2025-03-21 22:04:07] | Revised flameshot: don't sed the port version of the script (oops!)
