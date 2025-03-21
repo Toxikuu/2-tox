@@ -19,9 +19,9 @@ cp -vf "$SRC/$APPIMG" .
 
 install -vDm755 "$APPIMG" "$D/usr/share/flameshot/$APPIMG"
 
-sed -i "s@_APPIMG_@$APPIMG@" "$PORT"/flameshot.sh
 install -vDm755 "$PORT"/flameshot.sh "$D/usr/bin/flameshot.sh"
+sed -i "s@_APPIMG_@$APPIMG@" "$D"/usr/bin/flameshot.sh
 install -vDm644 "$PORT"/flameshot.desktop "$D/usr/share/applications/flameshot.desktop"
 
 }
-#d fix a typo in flameshot.sh
+#d don't sed the port version of the script (oops!)
