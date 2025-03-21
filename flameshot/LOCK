@@ -6,7 +6,7 @@ categories = [
     "utils",
     "gui",
 ]
-timestamp = "2025-03-16 18:24:45"
+timestamp = "2025-03-21 17:04:07"
 dependencies = [
     "fuse2",
     "o^xdotool:",
