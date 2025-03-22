@@ -30,7 +30,7 @@ _cfg_opts=(
     -D video-codecs=
     -D valgrind=disabled
     -D llvm=disabled
-    -D glx=fisabled
+    -D glx=disabled
     -D libunwind=disabled
 )
 
@@ -39,3 +39,4 @@ nj
 ni
 
 }
+#d typo
