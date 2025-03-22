@@ -34,3 +34,4 @@ nothing to commit, working tree clean] [2025-02-22 19:49:01] | Copied main/mesa 
 [39bb4ad93abd9d8a5aa033199f6e7095c91560ce] [2025-03-22 03:28:23] | Generated mesa=25.0.2
 [cf7bc2f3ecc3cfffa6390128d89d013bc33ba16b] [2025-03-22 03:36:52] | Revised mesa
 [ed4c6ed3a4dca19a4ec4ef34be3a62f47b03417b] [2025-03-22 03:36:52] | Generated mesa=25.0.2
+[15658190048a5ab19688cb5b9291102764f1c42b] [2025-03-22 03:37:53] | Revised mesa: added a missing dependency
