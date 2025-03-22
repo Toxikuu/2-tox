@@ -25,7 +25,7 @@ _cfg_opts=(
     -D gbm=enabled  # I only need gbm on nvidia
     -D osmesa=false
     -D platforms=x11,wayland
-    # -D gallium-drivers=nouveau
+    -D gallium-drivers=
     -D vulkan-drivers=
     -D video-codecs=
     -D valgrind=disabled
@@ -36,7 +36,7 @@ _cfg_opts=(
     # -D glvnd=enabled
     -D enable-glcpp-tests=false
     -D gles1=disabled
-    # -D zstd=enabled
+    -D zstd=enabled
     -D intel-elk=false
 )
 
