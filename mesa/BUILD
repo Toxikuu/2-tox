@@ -22,13 +22,15 @@ EXTRA=()
 with meson ninja rust
 
 _cfg_opts=(
+    -D gbm=enabled  # I only need gbm on nvidia
     -D osmesa=false
-    -D platforms=x11
-    -D gallium-drivers=nouveau
-    -D vulkan-drivers=""
+    -D platforms=x11,wayland
+    -D gallium-drivers=
+    -D vulkan-drivers=
+    -D video-codecs=
     -D valgrind=disabled
     -D llvm=disabled
-    -D video-codecs=all
+    -D glx=fisabled
     -D libunwind=disabled
 )
 
