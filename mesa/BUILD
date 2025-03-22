@@ -25,13 +25,19 @@ _cfg_opts=(
     -D gbm=enabled  # I only need gbm on nvidia
     -D osmesa=false
     -D platforms=x11,wayland
-    -D gallium-drivers=
+    -D gallium-drivers=nouveau  # Needed for dri
     -D vulkan-drivers=
     -D video-codecs=
     -D valgrind=disabled
     -D llvm=disabled
     -D glx=disabled
     -D libunwind=disabled
+    -D shader-cache-max-size="4G"
+    -D glvnd=enabled
+    -D enable-glcpp-tests=false
+    -D gles1=disabled
+    -D zstd=enabled
+    -D intel-elk=false
 )
 
 ms "${_cfg_opts[@]}"
@@ -39,4 +45,3 @@ nj
 ni
 
 }
-#d typo
