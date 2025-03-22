@@ -25,7 +25,7 @@ _cfg_opts=(
     -D gbm=enabled  # I only need gbm on nvidia
     -D osmesa=false
     -D platforms=x11,wayland
-    -D gallium-drivers=nouveau  # Needed for dri
+    # -D gallium-drivers=nouveau
     -D vulkan-drivers=
     -D video-codecs=
     -D valgrind=disabled
@@ -33,7 +33,7 @@ _cfg_opts=(
     -D glx=disabled
     -D libunwind=disabled
     -D shader-cache-max-size="4G"
-    -D glvnd=enabled
+    # -D glvnd=enabled
     -D enable-glcpp-tests=false
     -D gles1=disabled
     -D zstd=enabled
@@ -43,5 +43,7 @@ _cfg_opts=(
 ms "${_cfg_opts[@]}"
 nj
 ni
+
+install -vDm644 ../include/GL/internal/dri_interface.h -t "$D"/usr/include/GL/internal/
 
 }
