@@ -7,6 +7,7 @@ VCMD="git ls-remote --tags --refs '$UPST' | sed 's@.*/@@' | grep '^mesa-[0-9]' |
 DEPS=(
     "xorg/@lib"
     "libdrm"
+    "libglvnd"
     "mako"
     "pyyaml"
     "glslang"
@@ -47,3 +48,4 @@ ni
 install -vDm644 ../include/GL/internal/dri_interface.h -t "$D"/usr/include/GL/internal/
 
 }
+#d added a missing dependency
