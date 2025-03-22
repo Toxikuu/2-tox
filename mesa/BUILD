@@ -36,7 +36,7 @@ _cfg_opts=(
     # -D glvnd=enabled
     -D enable-glcpp-tests=false
     -D gles1=disabled
-    -D zstd=enabled
+    # -D zstd=enabled
     -D intel-elk=false
 )
 
