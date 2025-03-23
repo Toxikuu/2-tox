@@ -1,5 +1,5 @@
 NAME="kernel"
-VERS="6.13.7"
+VERS="6.13.8"
 CATG="critical core"
 DESC="The Linux kernel"
 VCMD="curl -s 'https://kernel.org' | grep linux- | head -n1 | cut -d'>' -f2 | cut -d'<' -f1"
@@ -62,4 +62,3 @@ else
 fi
 
 }
-#d tweaked download link
