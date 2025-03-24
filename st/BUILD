@@ -19,26 +19,27 @@ sed -i config.mk \
 
 # Apply all patches
 # Order is explicitly specified to (hopefully) avoid conflicts
+# Patches that I've yet to resolve conflicts for are commented out
 _patches=(
     st-boxdraw_v2-0.8.5.diff
     # st-clickurl-0.8.5.diff
     st-clipboard-0.8.3.diff
-    st-desktopentry-0.8.5.diff
+    # st-desktopentry-0.8.5.diff
     st-dynamic-cursor-color-0.9.diff
     st-glyph-wide-support-boxdraw-20220411-ef05519.diff
-    st-ligatures-boxdraw-20241226-0.9.2.diff
-    st-scrollback-ringbuffer-0.9.2.diff
-    st-scrollback-float-0.9.2.diff
-    st-scrollback-reflow-0.9.2.diff
-    st-scrollback-mouse-0.9.2.diff
-    st-scrollback-mouse-altscreen-20220127-2c5edf2.diff
-    st-scrollback-mouse-increment-0.9.2.diff
-    st-vertcenter-20231003-eb3b894.diff
+    # st-ligatures-boxdraw-20241226-0.9.2.diff
+    # st-scrollback-ringbuffer-0.9.2.diff
+    # st-scrollback-float-0.9.2.diff
+    # st-scrollback-reflow-0.9.2.diff
+    # st-scrollback-mouse-0.9.2.diff
+    # st-scrollback-mouse-altscreen-20220127-2c5edf2.diff
+    # st-scrollback-mouse-increment-0.9.2.diff
+    # st-vertcenter-20231003-eb3b894.diff
     st-workingdir-20200317-51e19ea.diff
 )
 
 for patch in ${_patches[@]}; do
-    echo "Applying patch ${patch}..."
+    echo "Applying patch ${patch}..." >&2
     tpatch "$PORT"/patches/"$patch"
 done
 
@@ -51,3 +52,4 @@ done
 mi CC=gcc clean  # roughly desugars to ``make CC=gcc DESTDIR="$D" clean install``
 
 }
+#d made it build
