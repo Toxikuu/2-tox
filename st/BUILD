@@ -21,7 +21,7 @@ sed -i config.mk \
 # Order is explicitly specified to (hopefully) avoid conflicts
 _patches=(
     st-boxdraw_v2-0.8.5.diff
-    st-clickurl-0.8.5.diff
+    # st-clickurl-0.8.5.diff
     st-clipboard-0.8.3.diff
     st-desktopentry-0.8.5.diff
     st-dynamic-cursor-color-0.9.diff
