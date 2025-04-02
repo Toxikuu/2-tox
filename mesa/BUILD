@@ -1,5 +1,5 @@
 NAME="mesa"
-VERS="25.0.2"
+VERS="25.0.3"
 DESC="Graphics software bundle (OpenGL, Vulkan, etc.)"
 CATG="graphics"
 UPST="https://gitlab.freedesktop.org/mesa/mesa.git"
@@ -48,4 +48,3 @@ ni
 install -vDm644 ../include/GL/internal/dri_interface.h -t "$D"/usr/include/GL/internal/
 
 }
-#d added a missing dependency
