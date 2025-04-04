@@ -1,5 +1,5 @@
 NAME="rust"
-VERS="1.85.1"
+VERS="1.86.0"
 CATG="lang"
 DESC="The Rust programming language"
 UPST="https://github.com/rust-lang/rust.git"
