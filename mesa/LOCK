@@ -3,7 +3,7 @@ name = "mesa"
 version = "25.0.3"
 description = "Graphics software bundle (OpenGL, Vulkan, etc.)"
 categories = ["graphics"]
-timestamp = "2025-04-02 17:37:12"
+timestamp = "2025-04-04 21:34:59"
 dependencies = [
     "xorg/@lib",
     "libdrm",
