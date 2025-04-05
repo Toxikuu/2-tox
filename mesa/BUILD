@@ -34,7 +34,6 @@ _cfg_opts=(
     -D glx=disabled
     -D libunwind=disabled
     -D shader-cache-max-size="4G"
-    -D glvnd=enabled
     -D enable-glcpp-tests=false
     -D gles1=disabled
     -D zstd=enabled
