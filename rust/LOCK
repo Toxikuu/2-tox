@@ -1,8 +1,8 @@
 repo = "tox"
 name = "rust"
 version = "1.86.0"
-description = "The Rust programming language"
+timestamp = "2025-04-16 17:15:08"
 categories = ["lang"]
-timestamp = "2025-04-03 22:08:32"
+description = "The Rust programming language"
 upstream = "https://github.com/rust-lang/rust.git"
 version_command = "git ls-remote --tags --refs 'https://github.com/rust-lang/rust.git' | sed 's@.*/@@' | grep -v 'release-' | sort -V | tail -n1"
