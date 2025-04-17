@@ -1,5 +1,5 @@
 NAME="llvm"
-VERS="20.1.2"
+VERS="20.1.3"
 CATG="lang"
 DESC="A collection of modular and reusable compiler and toolchain technologies"
 UPST="https://github.com/llvm/llvm-project.git"
