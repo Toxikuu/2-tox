@@ -1,7 +1,7 @@
 repo = "tox"
 name = "flameshot"
 version = "12.1.0"
-timestamp = "2025-04-16 17:15:57"
+timestamp = "2025-04-17 22:00:59"
 categories = [
     "utils",
     "gui",
