@@ -5,7 +5,7 @@ CATG="utils gui"
 UPST="https://github.com/flameshot-org/flameshot.git"
 DEPS=(
     "fuse2"
-    "o^xdotool: used in flameshot.sh to refocus after taking a screenshot" 
+    "o^xdotool" # used in flameshot.sh to refocus after taking a screenshot" 
 )
 
 # binary because i dont want to build qt5 just for this
@@ -24,4 +24,3 @@ sed -i "s@_APPIMG_@$APPIMG@" "$D"/usr/bin/flameshot.sh
 install -vDm644 "$PORT"/flameshot.desktop "$D/usr/share/applications/flameshot.desktop"
 
 }
-#d don't sed the port version of the script (oops!)
