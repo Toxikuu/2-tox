@@ -1,7 +1,7 @@
 repo = "tox"
-name = "linux"
-version = "6.13.11"
-timestamp = "2025-04-16 17:14:57"
+name = "kernel"
+version = "6.14.2"
+timestamp = "2025-04-17 19:48:35"
 categories = [
     "critical",
     "core",
@@ -12,4 +12,4 @@ version_command = "curl -s 'https://kernel.org' | grep linux- | head -n1 | cut -
 
 [source]
 kind = "Tarball"
-url = "https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.13.11.tar.gz"
+url = "https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.14.2.tar.gz"
