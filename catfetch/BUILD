@@ -1,7 +1,10 @@
 NAME="catfetch"
-VERS="1.1.0"
-DESC="Cute little fetch script written in rust"
+VERS="1.2.0"
+DESC="Cute fetch script featuring a cat"
 UPST="https://github.com/Toxikuu/catfetch.git"
+DEPS=(
+    "rust"
+)
 
 SOURCE="https://github.com/Toxikuu/catfetch/archive/refs/tags/v$VERS.tar.gz"
 EXTRA=()
