@@ -1,10 +1,15 @@
 repo = "tox"
 name = "catfetch"
-version = "1.1.0"
-timestamp = "2025-04-16 17:14:38"
-description = "Cute little fetch script written in rust"
+version = "1.2.0"
+timestamp = "2025-04-23 05:01:49"
+description = "Cute fetch script featuring a cat"
 upstream = "https://github.com/Toxikuu/catfetch.git"
+
+[[dependencies]]
+relpath = "tox/rust"
+optional = false
+runtime = false
 
 [source]
 kind = "Tarball"
-url = "https://github.com/Toxikuu/catfetch/archive/refs/tags/v1.1.0.tar.gz"
+url = "https://github.com/Toxikuu/catfetch/archive/refs/tags/v1.2.0.tar.gz"
